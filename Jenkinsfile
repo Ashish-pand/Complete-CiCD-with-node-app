@@ -9,9 +9,9 @@ pipeline {
 
   stages {
 
-    stage('Checkout Source') {
+    stage('Checkout') {
       steps {
-        git 'https://github.com/Ashish-pand/Complete-CiCD-with-node-app.git'
+        git branch: 'main', credentialsId: 'your-git-credentials', url:'https://github.com/Ashish-pand/Complete-CiCD-with-node-app.git'
       }
     }
 
