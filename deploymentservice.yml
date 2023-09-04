@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: ashish8290/nodeapp:latest
+        image: ashish8290/hello-world-node
         ports:
         - containerPort: 3000
         
